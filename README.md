@@ -22,7 +22,7 @@ NVDA) feeds through to the sector.
 
 | Ticker | Role in the supply chain |
 |---|---|
-| ASML   | Sole supplier of EUV lithography machines — the bottleneck at the top of the chain |
+| ASML   | Sole supplier of advanced EUV lithography machines |
 | TSM    | Dominant foundry, converts designs into physical chips |
 | NVDA   | Demand-side proxy — AI/compute driven chip demand |
 | SOXX   | Broad semiconductor index, used as the benchmark |
