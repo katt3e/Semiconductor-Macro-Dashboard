@@ -20,11 +20,13 @@ NVDA) feeds through to the sector.
 
 ## Why these tickers
 
-| Ticker | Role in the supply chain |
+| Ticker | Explanation |
 |---|---|
 | ASML   | Sole supplier of advanced EUV lithography machines |
 | TSM    | Dominant foundry, converts designs into physical chips |
-| NVDA   | Demand-side proxy — AI/compute driven chip demand |
+| NVDA   | Demand-side  — AI/compute driven chip. Best performing stock on the NASDAQ in 2026 |
+| MU     | Memory chip supplier - AI-driven demand for DRAM and NAND memory chips |
+| TXN    | IC pioneer (1958). Diversified analog/embedded chips, less AI-pure than the rest of the lineup  |
 | SOXX   | Broad semiconductor index, used as the benchmark |
 
 ## Setup
