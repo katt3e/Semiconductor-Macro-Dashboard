@@ -23,7 +23,8 @@ def fetch_prices(tickers, period="2y", interval="1d"):
 def fetch_single(ticker, period="2y", interval="1d"):
     return fetch_prices([ticker], period=period, interval=interval)
 
-#if there's an error, return to 0.0 so that the sharpe ratio is computed anyways
+#Pulling the risk free rate from 13week US Treasury Bills (most common method). 
+#If there's an error, return to 0.0 so that the sharpe ratio is computed anyways
 def fetch_risk_free_rate(ticker="^IRX"):
     try:
         quote = yf.Ticker(ticker).history(period="5d")
