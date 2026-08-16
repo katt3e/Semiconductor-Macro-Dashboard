@@ -1,22 +1,15 @@
 # Semiconductor & Macro Dashboard
 
 A small Python tool that pulls price data for key semiconductor names
-(ASML, TSM, NVDA) alongside the SOXX ETF (a proxy for the broader
-Philadelphia Semiconductor Index), and produces:
+(ASML, TSM, MU, TXN, NVDA) alongside the SOXX ETF (used as benchmark), and produces:
 
 - **Rebased performance chart** — how each name has moved relative to the
   index over the last 2 years, indexed to 100 at the start date.
-- **60-day rolling correlation** between ASML (equipment/lithography) and
-  SOXX (the broad index) — a way of seeing whether the "supply chain
-  bottleneck" name moves in or out of step with the sector as a whole.
+- **60-day rolling correlation between ASML and SOXX** isolates periods where ASML-specific news (export controls,           earnings, EUV demand) decouples it from broader sector moves.
 - **Annualised return, volatility, and Sharpe ratio** for each ticker,
   saved to `output/summary_stats.csv`.
 
-This was built to support quantitative analysis behind
-[kat3markets](#) (Substack), specifically the semiconductor supply chain
-and capital markets themes covered there — ASML's EUV lithography
-monopoly, TSMC's foundry dominance, and how AI-driven demand (proxied by
-NVDA) feeds through to the sector.
+This was built to support analysis behind [kat3markets](#) (Substack), specifically the first chapter covering semiconductor history, supply chain intricacies etc. 
 
 ## Why these tickers
 
@@ -24,7 +17,7 @@ NVDA) feeds through to the sector.
 |---|---|
 | ASML   | Sole supplier of advanced EUV lithography machines |
 | TSM    | Dominant foundry, converts designs into physical chips |
-| NVDA   | Demand-side  — AI/compute driven chip. Best performing stock on the NASDAQ in 2026 |
+| NVDA   | Demand-side - AI/compute driven chip. Best performing stock on the NASDAQ in 2026 |
 | MU     | Memory chip supplier - AI-driven demand for DRAM and NAND memory chips |
 | TXN    | IC pioneer (1958). Diversified analog/embedded chips, less AI-pure than the rest of the lineup  |
 | SOXX   | Broad semiconductor index, used as the benchmark |
