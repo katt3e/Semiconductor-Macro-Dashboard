@@ -3,7 +3,7 @@ import matplotlib
 matplotlib.use("Agg")  # rasterize plots to files, no display required
 import matplotlib.pyplot as plt
 
-from data_fetch import fetch_prices
+from data_fetch import fetch_prices, fetch_risk_free_rate
 from analysis import daily_returns, rolling_correlation, normalise_to_100, summary_stats
 
 TICKERS = ["ASML", "TSM", "NVDA", "MU", "TXN", "SOXX"]
@@ -22,8 +22,12 @@ def main():
 
     returns = daily_returns(prices)
 
+    print("Fetching current risk-free rate (3-month T-bill, ^IRX)...")
+    risk_free_rate = fetch_risk_free_rate()
+    print(f"Risk-free rate: {risk_free_rate:.2%}")
+
     print("\n          Annualised Summary Stats (2y)")
-    stats = summary_stats(returns)
+    stats = summary_stats(returns, risk_free_rate=risk_free_rate)
     print(stats)
     stats.to_csv(f"{OUTPUT_DIR}/summary_stats.csv")
 
