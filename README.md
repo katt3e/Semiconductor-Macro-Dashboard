@@ -3,9 +3,9 @@
 A small Python tool that pulls price data for key semiconductor names
 (ASML, TSM, MU, TXN, NVDA) alongside the SOXX ETF (used as benchmark), and produces:
 
-- **Rebased performance chart** how each name has moved relative to the
+- **Rebased performance chart** - how each name has moved relative to the
   index over the last 2 years, indexed to 100 at the start date.
-- **60-day rolling correlation between ASML and SOXX** isolates periods where ASML-specific news (export controls,           earnings, EUV demand) decouples it from broader sector moves.
+- **60-day rolling correlation between ASML and SOXX** - isolates periods where ASML-specific news (export controls,           earnings, EUV demand) decouples it from broader sector moves.
 - **Annualised return, volatility, and Sharpe ratio** for each ticker,
   saved to `output/summary_stats.csv`.
 
