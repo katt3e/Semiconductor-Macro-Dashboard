@@ -45,7 +45,7 @@ semiconductor-macro-dashboard/
 ├── main.py          # orchestrates the pipeline: fetch -> analyse -> plot
 ├── data_fetch.py     # yfinance wrapper for pulling price data
 ├── analysis.py       # returns, rolling correlation, normalisation, summary stats
-├── requirements.txt
+├── requirements.txt  #3rd party modules, need to download upon setuf
 └── output/           # generated charts and stats (created on run), the pngs are already uploaded above for quick lookup
 ```
 
