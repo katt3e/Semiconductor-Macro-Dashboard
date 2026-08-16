@@ -51,19 +51,14 @@ semiconductor-macro-dashboard/
 ├── data_fetch.py     # yfinance wrapper for pulling price data
 ├── analysis.py       # returns, rolling correlation, normalisation, summary stats
 ├── requirements.txt
-└── output/           # generated charts and stats (created on run)
+└── output/           # generated charts and stats (created on run), the pngs are already uploaded above for quick lookup
 ```
 
 ## Possible extensions
 
-- Add a macro layer (e.g. Fed funds rate or 10y yield via `fredapi`) to
-  test correlation between rate expectations and semiconductor equity
-  performance.
-- Extend the ticker list to cover ASM International, Applied Materials,
-  or SMIC as further points on the supply chain.
-- Turn the rolling correlation chart into a signal (e.g. flag periods
-  where correlation breaks down) as a lightweight event-detection layer.
+- Add a greater macro layer. Semiconductor stocks are infamously cyclical (due to technological advancements and a very delicate supply chain dynamic (more of this on the substack), so adding the S&P500 or Fed funds rate would provide insight whether changes are sector specific or beta to the market.
+- Extend the ticker list to cover ASM International, Applied Materials, or SMIC as further points on the semiconductor supply chain.
 
 ## Author
 
-Katarzyna Koczar — [kat3markets Substack](#) | [GitHub](https://github.com/katt3e)
+Katarzyna Koczar | [GitHub](https://github.com/katt3e)
